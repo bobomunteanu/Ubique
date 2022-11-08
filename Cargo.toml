@@ -1,0 +1,13 @@
+[package]
+name = "ubique"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libp2p = { version = "0.49.0", features = ["ping", "kad", "mdns", "tcp", "dns", "async-std", "websocket", "noise", "mplex", "yamux"] }
+futures = "0.3.25"
+async-std = "1.12.0"
+tokio-test = "0.4.2"
+env_logger = "0.9.3"
